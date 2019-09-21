@@ -1,0 +1,155 @@
+.catalog {
+    padding: 100px 0;
+    &__tabs {
+        margin-top: 69px;
+        list-style: none;
+        display: flex;
+        justify-content: center;      
+    }
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: solid 2px #d0d0d0;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #6b6b6b;
+        text-transform: uppercase;
+        line-height: 50px;
+        margin-right: 10px;
+        transform: skew(-25deg);
+        transition: 0.5s all;
+        cursor: pointer;
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            background-color: $main-element-color;
+            color: $main-text-color;
+            border: none;
+            line-height: 52px;
+        }
+        }
+    &__content {
+        margin-top: 59px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        display: none;
+        &_active {
+            display: flex;
+        }
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        min-height: 440px;
+        padding-bottom: 20px;
+        border: solid 2px #e8e8e8;
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+        &__wrapper {
+            display: flex;
+            width: 200%;
+        }
+        &__product {
+            width: 50%;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(0%);
+            }
+        }
+        &__list {
+            position: relative;
+            padding-right: 20px;
+            width: 50%;
+            transform: translateX(0%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(-100%);
+            }
+            ul {
+                list-style: none;
+                li {
+                    position: relative;
+                    text-align: left;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #555555;
+                    margin-top: 20px;
+                    &:before {
+                        position: absolute;
+                        top: 7px;
+                        left: -20px;
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-element-color;
+                    }
+                }
+            }
+        }
+        &__back {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: $main-element-color;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        &__img {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            color: $second_text_color;
+        }
+        &__descr {
+            margin-top: 16px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        &__link {
+            display: block;
+            margin-top: 17px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: $main-element-color;
+        }
+        hr {
+            margin: 20px auto;
+            width: 260px;
+        }
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        &__oldPrice {
+            font-size: 14px;
+            font-weight: 300;
+            color: #555555;
+            text-align: left;
+            text-decoration: line-through;
+        }
+        &__newPrice {
+            font-size: 20px;
+            font-weight: 700;
+            color: #050505;
+            line-height: 20px;
+        }
+    }
+}

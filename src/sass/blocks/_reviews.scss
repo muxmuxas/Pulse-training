@@ -1,0 +1,34 @@
+.reviews {
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 70px;
+        &:first-of-type {
+            margin-top: 70px;
+        }
+    }
+    &__img {
+        align-self: flex-start;
+        margin-right: 60px;
+    }
+    &__content {
+        max-width: 650px;
+    }
+    &__customer {
+        font-size: 18px;
+        font-weight: 700;
+        color: $second_text_color;
+    }
+    &__experience {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #646464;
+    }
+    &__text {
+        margin-top: 19px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #646464;
+    }
+}

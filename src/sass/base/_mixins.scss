@@ -1,0 +1,16 @@
+@mixin button {
+    display: block;
+    border-radius: 5px;
+    background-color: $main-element-color;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+@mixin link_hover {
+    &:hover {
+        color: $main-text-color;
+    }
+}
