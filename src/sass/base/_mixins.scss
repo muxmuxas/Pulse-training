@@ -8,6 +8,7 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    outline: none;
 }
 @mixin link_hover {
     &:hover {
@@ -25,6 +26,6 @@
 @mixin tab_hover {
     &:hover {
         transition: .5s all;
-        box-shadow: 0px 0px 20px 0px $main-element-color;
+        box-shadow: 0px 0px 10px 0px $main-element-color;
     }
 }
