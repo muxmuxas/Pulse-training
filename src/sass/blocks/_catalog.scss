@@ -1,5 +1,4 @@
 .catalog {
-    padding: 100px 0;
     &__tabs {
         margin-top: 69px;
         list-style: none;
@@ -20,6 +19,7 @@
         transform: skew(-25deg);
         transition: 0.5s all;
         cursor: pointer;
+        @include tab_hover;
         div {
             transform: skewX(25deg);
         }

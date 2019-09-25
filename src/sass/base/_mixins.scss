@@ -14,3 +14,17 @@
         color: $main-text-color;
     }
 }
+
+@mixin btn_hover {
+    &:hover {
+        transition: .5s all;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+}
+
+@mixin tab_hover {
+    &:hover {
+        transition: .5s all;
+        box-shadow: 0px 0px 20px 0px $main-element-color;
+    }
+}

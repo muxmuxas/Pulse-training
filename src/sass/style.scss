@@ -12,6 +12,7 @@
 
 .button {
     @include button;
+    @include btn_hover;
     &_top {
         width: 150px;
         height: 30px;
@@ -67,6 +68,18 @@
     }
 }
 
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    width: 40px;
+    height: 40px;
+    img {
+        width: 100%;
+    }
+}
+
 @import 'blocks/promo';
 @import 'blocks/advantages';
 @import 'blocks/consultation';
@@ -74,6 +87,7 @@
 @import 'blocks/catalog';
 @import 'blocks/reviews';
 @import 'blocks/map';
+@import 'blocks/modal';
 
 @import 'base/media';
 
