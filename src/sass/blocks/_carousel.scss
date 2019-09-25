@@ -4,6 +4,24 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
+        .slick-dots {
+            display: flex !important;
+            justify-content: center;
+            list-style-type: none;
+            .slick-active {
+                background-color: #aaa;
+            }
+            li {
+                margin-right: 15px;   
+                background-color: #ddd;
+                border-radius: 100%;
+                width: 10px;
+                height: 10px;             
+                button {
+                    visibility: hidden;
+                }
+            }
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;

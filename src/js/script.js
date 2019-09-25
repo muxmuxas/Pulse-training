@@ -7,7 +7,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="../img/carousel/chevron-right.png"></button>',
         responsive: [
             {
-              breakpoint: 992,
+              breakpoint: 769,
               settings: {
                 dots: true,
                 arrows: false

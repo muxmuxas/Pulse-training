@@ -47,6 +47,9 @@
             border: 2px solid $main-text-color;
             border-radius: 100%;
             cursor: pointer;
+            &:last-of-type {
+                margin-right: 0;
+            }
         }
     }
 }
